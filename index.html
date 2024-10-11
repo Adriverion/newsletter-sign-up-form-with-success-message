@@ -2,51 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <article class="box form">
+      <picture class="form__coverpage">
+        <img class="form__coverpage-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="coverpage">
+      </picture>
+      <section class="box__text-content">
+        <header>
+          <h2 class="box__title">Stay updated!</h2>
+        </header>
+        <p class="box__text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="form__list">
+          <li class="box__text form__list-item">Product discovery and building what matters</li>
+          <li class="box__text form__list-item">Measuring to ensure updates are a success</li>
+          <li class="box__text form__list-item">And much more!</li>
+        </ul>
+      </section>
+      <form class="form__form-content" action="#">
+        <label class="box__text box__text--small form__label" for="newsletter-email">Email address</label>
+        <input class="form__input" name="newsletter-email" type="email" placeholder="email@company.com" required>
+        <button class="box__button" type="submit"> Subscribe to monthly newsletter</button>
+      </form>
+    </article>
 
-  <!-- Sign-up form start -->
 
-  Stay updated!
 
-  Join 60,000+ product managers receiving monthly updates on:
+    <aside class="box message">
+      <img class="message__icon" src="./assets/images/icon-success.svg" alt="success icon">
+      <section class="box__text-content">
+        <header class="message__header">
+          <h2 class="box__title">Thanks for subscribing!</h2>
+        </header>
+        <p class="box__text"> 
+          A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </section>
+      <div class="message__button">
+        <button class="box__button">Dismiss message</button>
+      </div>
+    </aside>
+  </main>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
 
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
